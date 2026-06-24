@@ -43,10 +43,13 @@ def extract_text_from_pdf(pdf_path: str) -> list[dict]:
     pages = []
     for page_num, page in enumerate(doc, start=1):
         text = page.get_text("text").strip()
-        if text:  # skip blank pages
+        blocks = page.get_text("blocks")
+        block_text = " ".join(b[4].strip() for b in blocks if b[4].strip())
+        combined = text if len(text) >= len(block_text) else block_text
+        if combined:
             pages.append({
                 "page_num": page_num,
-                "text": text,
+                "text": combined,
                 "source": Path(pdf_path).name,
             })
     doc.close()
@@ -108,7 +111,7 @@ def build_faiss_index(docs: list[Document]) -> FAISS:
     """Embed chunks and build FAISS vector store."""
     log.info(f"Embedding {len(docs)} chunks with '{EMBEDDING_MODEL}'...")
     embeddings = HuggingFaceEmbeddings(
-        model=EMBEDDING_MODEL
+        model=EMBEDDING_MODEL,
     )
     vector_store = FAISS.from_documents(docs, embeddings)
     log.info("FAISS index built.")
@@ -132,7 +135,7 @@ def load_index() -> FAISS:
             f"No index at '{index_path}'. Run ingestion first."
         )
     embeddings = HuggingFaceEmbeddings(
-        model=EMBEDDING_MODEL
+        model=EMBEDDING_MODEL,
     )
     vector_store = FAISS.load_local(
         index_path,

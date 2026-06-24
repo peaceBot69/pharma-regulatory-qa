@@ -156,7 +156,7 @@ with st.sidebar:
         st.rerun()
 
     st.markdown("---")
-    st.caption("Model: GPT-4o | Embeddings: text-embedding-3-small | VectorDB: FAISS")
+    st.caption("Model: Gemini-2.5 Flash | Embeddings: text-embedding-3-small | VectorDB: FAISS")
 
 
 # ─────────────────────────────────────────────
