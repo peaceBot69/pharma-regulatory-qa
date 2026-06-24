@@ -20,7 +20,7 @@ Built with LangChain, FAISS, Gemini 2.5 Flash, and Streamlit.
 ```
 PDFs (ICH/FDA)
     ↓
-ingestion.py        PyMuPDF → chunk (800 tokens, 100 overlap) → embed → FAISS index
+ingestion.py        PyMuPDF → chunk (400 tokens, 100 overlap) → embed → FAISS index
     ↓
 retriever.py        cosine similarity search → top-k chunks → confidence threshold filter
     ↓
@@ -66,7 +66,7 @@ pharma-regulatory-qa/
 |---|---|
 | PDF Parsing | PyMuPDF (`fitz`) |
 | Chunking | LangChain `RecursiveCharacterTextSplitter` |
-| Embeddings | OpenAI `text-embedding-3-small` |
+| Embeddings | HuggingFace `all-MiniLM-L6-v2` |
 | Vector DB | FAISS (persisted to disk) |
 | LLM | Gemini 2.5 Flash (`langchain-google-genai`) |
 | UI | Streamlit |
