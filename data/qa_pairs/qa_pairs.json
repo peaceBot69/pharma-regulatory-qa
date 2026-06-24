@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What are the long-term stability testing conditions per ICH Q1A?",
+    "answer": "Long-term testing should be conducted at 25\u00b0C \u00b1 2\u00b0C / 60% RH \u00b1 5% RH for a minimum of 12 months.",
+    "sources": [
+      "ich_q1a.pdf"
+    ]
+  },
+  {
+    "question": "What are the accelerated stability testing conditions per ICH Q1A?",
+    "answer": "Accelerated testing should be conducted at 40\u00b0C \u00b1 2\u00b0C / 75% RH \u00b1 5% RH for a minimum of 6 months.",
+    "sources": [
+      "ich_q1a.pdf"
+    ]
+  },
+  {
+    "question": "What constitutes significant change in assay during stability testing?",
+    "answer": "A 5% change in assay from its initial value is considered significant change for a drug product.",
+    "sources": [
+      "ich_q1a.pdf"
+    ]
+  },
+  {
+    "question": "What is a Critical Quality Attribute (CQA)?",
+    "answer": "A CQA is a physical, chemical, biological, or microbiological property or characteristic that should be within an appropriate limit, range, or distribution to ensure the desired product quality.",
+    "sources": [
+      "ich_q8.pdf"
+    ]
+  },
+  {
+    "question": "What is a Quality Target Product Profile (QTPP)?",
+    "answer": "A QTPP is a prospective summary of the quality characteristics of a drug product that ideally will be achieved to ensure the desired quality, taking into account safety and efficacy.",
+    "sources": [
+      "ich_q8.pdf"
+    ]
+  },
+  {
+    "question": "What is design space in pharmaceutical development?",
+    "answer": "Design space is the multidimensional combination and interaction of input variables and process parameters that have been demonstrated to provide assurance of quality. Working within the design space is not considered as a change.",
+    "sources": [
+      "ich_q8.pdf"
+    ]
+  },
+  {
+    "question": "What does FDA 21 CFR Part 11 govern?",
+    "answer": "21 CFR Part 11 sets forth criteria under which electronic records, electronic signatures, and handwritten signatures executed to electronic records are considered trustworthy, reliable, and generally equivalent to paper records.",
+    "sources": [
+      "fda_21cfr_part11.pdf"
+    ]
+  },
+  {
+    "question": "What must signed electronic records contain per 21 CFR Part 11?",
+    "answer": "Signed electronic records must contain the printed name of the signer, the date and time when the signature was executed, and the meaning associated with the signature.",
+    "sources": [
+      "fda_21cfr_part11.pdf"
+    ]
+  },
+  {
+    "question": "What are the two primary principles of ICH Q9 quality risk management?",
+    "answer": "Risk evaluation should be based on scientific knowledge and link to patient protection; and the level of effort and documentation should be commensurate with the level of risk.",
+    "sources": [
+      "ich_q9.pdf"
+    ]
+  },
+  {
+    "question": "What three questions does risk assessment address per ICH Q9?",
+    "answer": "What might go wrong? What is the likelihood it will go wrong? What are the consequences (severity)?",
+    "sources": [
+      "ich_q9.pdf"
+    ]
+  }
+]

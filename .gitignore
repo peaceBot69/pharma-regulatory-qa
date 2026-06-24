@@ -1,0 +1,43 @@
+# Environment
+.env
+*.env
+
+# Vector store (large binary, rebuild locally)
+vector_store/
+
+# Raw PDFs (confidential regulatory docs)
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Eval reports (optional — remove if you want to track)
+data/qa_pairs/eval_report.json
