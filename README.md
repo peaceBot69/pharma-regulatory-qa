@@ -165,10 +165,10 @@ python tests/test_retriever.py
 Edit `src/config.py` to tune:
 
 ```python
-CHUNK_SIZE = 800          # tokens per chunk
+CHUNK_SIZE = 400          # tokens per chunk
 CHUNK_OVERLAP = 100       # overlap between chunks
 TOP_K = 8                 # chunks retrieved per query
-CONFIDENCE_THRESHOLD = 0.50  # minimum cosine similarity score
+CONFIDENCE_THRESHOLD = 0.75  # minimum cosine similarity score
 ```
 
 ---
@@ -176,5 +176,5 @@ CONFIDENCE_THRESHOLD = 0.50  # minimum cosine similarity score
 ## Notes
 
 - `vector_store/` and `data/raw/` are gitignored — rebuild index locally after cloning
-- Gemini 2.5 Flash used for generation; OpenAI embeddings used for retrieval
+- Gemini 2.5 Flash used for generation; HuggingFace embeddings used for retrieval
 - `AgentExecutor` dropped in favour of direct RAG chain for reliability with Gemini
